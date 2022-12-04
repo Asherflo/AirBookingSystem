@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('zip', models.PositiveIntegerField(null=True)),
                 ('street', models.CharField(max_length=255)),
                 ('city', models.CharField(max_length=255)),
-                ('customer', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='airlineBooking.passenger')),
+                ('passenger', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='airlineBooking.passenger')),
             ],
         ),
         migrations.CreateModel(

@@ -43,10 +43,10 @@ class Ticket(models.Model):
     ticket_booking_id = models.ForeignKey(Booking, on_delete=models.CASCADE)
     ticket_date = models.DateField(auto_now_add=True)
     ticket_description = models.CharField(max_length=255)
-
-
-class Address(models.Model):
-    zip = models.PositiveIntegerField(null=True)
-    street = models.CharField(max_length=255)
-    city = models.CharField(max_length=255)
-    customer = models.OneToOneField(Passenger, on_delete=models.CASCADE, primary_key=True)
+#
+ #
+# class Address(models.Model):
+#     # zip = models.PositiveIntegerField()
+#     street = models.CharField(max_length=255)
+#     city = models.CharField(max_length=255)
+#     passenger = models.ForeignKey(Passenger, on_delete=models.CASCADE)
